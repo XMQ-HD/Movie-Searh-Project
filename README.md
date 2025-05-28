@@ -1,12 +1,13 @@
-# React + Vite
+# 🎬 Movie Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A super-lightweight movie-search front end.  
+- **Key features**  
+  - **Trending list** – shows the most-popular titles from TMDB by default.  
+  - **Keyword search** – type a word and instantly get movie details (title, poster, rating, … ).  
+  - **Search-count tracking** – every query is stored in an Appwrite database and its counter is incremented, so the app can display a “Trending Searches” chart.  
 
-Currently, two official plugins are available:
+- **Better search UX**  
+  - **Custom 300 ms debounce** – the app waits until the user stops typing for 300 ms before calling the TMDB API, cutting unnecessary requests and flicker.  
+  - Poster fallback – if a movie has no poster or 404s, an in-app placeholder image is shown instead.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Live demo 👉 <https://movie.xmqzone.com>
